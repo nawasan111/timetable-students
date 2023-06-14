@@ -32,9 +32,7 @@ export default function LImitCount() {
       <select className="input-select" name="f_maxrows" id="">
         <option value="25">25</option>
         <option value="100">100</option>
-        <option value={limitCount}>
-          {limitCount.length ? limitCount : "custom"}
-        </option>
+        <option value={limitCount}>custom</option>
       </select>
       <div>
         <input

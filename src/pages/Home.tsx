@@ -12,7 +12,7 @@ export default function Home() {
     document.title = "ตารางเรียนนักศึกษา";
   }, []);
   return (
-    <main className="text-center">
+    <main className="text-center flex justify-center my-3 px-10">
       <FormInput>
         <input type="hidden" name="f_cmd" value="1" />
         <h1 className="text-center text-2xl p-3">ตารางเรียนนักศึกษา</h1>
@@ -24,7 +24,7 @@ export default function Home() {
         <LImitCount />
         <div>
           <button
-            className="py-2 px-3 shadow shadow-blue-200 border border-blue-500 rounded"
+            className="py-2 px-3 shadow shadow-zinc-200 border rounded"
             type="submit"
           >
             search
