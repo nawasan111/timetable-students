@@ -13,7 +13,14 @@ export default function LImitCount() {
   const getKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     let re = /^[0-9\b]+$/;
     console.log(e.key);
-    let allowKey = ["Delete", "Backspace", "ArrowLeft", "ArrowRight", "Tab"];
+    let allowKey = [
+      "Delete",
+      "Backspace",
+      "ArrowLeft",
+      "ArrowRight",
+      "Tab",
+      "Enter",
+    ];
     if (!re.test(e.key) && !allowKey.includes(e.key)) {
       e.preventDefault();
     }

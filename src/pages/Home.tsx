@@ -5,8 +5,12 @@ import LastNameInput from "../components/LastNameInput";
 import StudenStatus from "../components/StudenStatus";
 import Faculty from "../components/Faculty";
 import LImitCount from "../components/LImitCount";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "ตารางเรียนนักศึกษา";
+  }, []);
   return (
     <main className="text-center">
       <FormInput>
@@ -19,7 +23,12 @@ export default function Home() {
         <Faculty />
         <LImitCount />
         <div>
-          <button className="py-2 px-3 shadow shadow-blue-200 border border-blue-500 rounded" type="submit">search</button>
+          <button
+            className="py-2 px-3 shadow shadow-blue-200 border border-blue-500 rounded"
+            type="submit"
+          >
+            search
+          </button>
         </div>
       </FormInput>
     </main>
