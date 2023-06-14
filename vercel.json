@@ -15,7 +15,7 @@
                 },
                 {
                     "key": "Content-Type",
-                    "value": "text/html; charset=windows-874"
+                    "value": "text/html;charset=windows-874"
                 }
             ]
         }
