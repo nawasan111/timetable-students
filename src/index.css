@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .input-text {
+        @apply my-3 mx-2 shadow shadow-zinc-300 border rounded;
+    }
+    .input-select {
+        @apply rounded px-3 my-2 mx-2 bg-white shadow shadow-zinc-200 border;
+    }
+}
