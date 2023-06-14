@@ -12,7 +12,7 @@ export default function FormInput({ children }: FormProps) {
     let getSubmit = searchParams.get("submit");
     if (getSubmit === "auto") {
       if (formRef.current) {
-        formRef.current.target = ""
+        formRef.current.target = "";
         formRef.current.submit();
       }
     }
@@ -20,6 +20,7 @@ export default function FormInput({ children }: FormProps) {
   return (
     <div className="block rounded-lg bg-white p-6 shadow-lg border dark:bg-neutral-700">
       <form
+        acceptCharset="windows-874"
         id="formRef"
         ref={formRef}
         action="https://reg2.ubu.ac.th/registrar/learn_time.asp?backto=home"
