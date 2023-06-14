@@ -12,10 +12,6 @@
                 {
                     "key": "X-Frame-Options",
                     "value": "deny"
-                },
-                {
-                    "key": "Content-Type",
-                    "value": "text/html; charset=UTF-8"
                 }
             ]
         }
