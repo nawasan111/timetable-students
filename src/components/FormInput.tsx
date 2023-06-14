@@ -6,7 +6,7 @@ type FormProps = {
 };
 
 export default function FormInput({ children }: FormProps) {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const formRef = useRef<HTMLFormElement>(null);
   useEffect(() => {
     let getSubmit = searchParams.get("submit");
