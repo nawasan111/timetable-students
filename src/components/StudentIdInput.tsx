@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, KeyboardEvent } from "react";
+import { useState, ChangeEvent } from "react";
 import { useSearchParams } from "react-router-dom";
 
 export default function StudentIdInput() {
