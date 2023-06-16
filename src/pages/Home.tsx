@@ -31,7 +31,7 @@ export default function Home() {
             search
           </button>
         </div>
-        <div className="mt-10 text-right">
+        <div className="mt-5 text-right">
           <Link className="underline hover:text-blue-600" to={'/table'}>ตารางเรียรายบุคคล</Link>
         </div>
       </FormInput>

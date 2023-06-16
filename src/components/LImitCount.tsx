@@ -27,7 +27,7 @@ export default function LImitCount() {
   };
 
   return (
-    <div>
+    <div className="mt-3">
       <label htmlFor="">จำนวนรายการที่ได้จากการค้นหาไม่เกิน</label>
       <select className="input-select" name="f_maxrows" id="">
         <option value="25">25</option>

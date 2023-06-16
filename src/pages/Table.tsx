@@ -30,13 +30,13 @@ export default function Table() {
       "Tab",
       "Enter",
     ];
-    if (!re.test(e.key) && !allowKey.includes(e.key) && (!e.ctrlKey)) {
+    if (!re.test(e.key) && !allowKey.includes(e.key) && !e.ctrlKey) {
       e.preventDefault();
     }
   };
 
   return (
-    <main className="text-center flex justify-center my-3 px-10">
+    <main className="text-center flex justify-center lg:items-center lg:min-h-screen my-3 lg:my-0 px-10">
       <div className="block rounded-lg bg-white p-6 shadow-lg border dark:bg-neutral-700">
         <h3 className="text-2xl my-3">ตารางเรียนรายบุคคล</h3>
         <form
@@ -56,8 +56,12 @@ export default function Table() {
               setSearch({ studentid: e.target.value });
             }}
             onKeyDown={getKeyDown}
-            placeholder="รหัสนักศึกษา (ตัวเลข)"
+            placeholder="รหัสนักศึกษาบางกรณี (ตัวเลข)"
           />
+          <div className="text-sm text-red-600">
+            *ต้องใช้ id พิเศษ ขณะนี้ยังไม่สามารถใช้ id นักศึกษาได้
+          </div>
+
           <div>
             <input type="hidden" name="f_cmd" value={"2"} />
           </div>
