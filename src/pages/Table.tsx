@@ -37,7 +37,7 @@ export default function Table() {
 
   return (
     <main className="text-center flex justify-center my-3 px-10">
-      <div>
+      <div className="block rounded-lg bg-white p-6 shadow-lg border dark:bg-neutral-700">
         <h3 className="text-2xl my-3">ตารางเรียนรายบุคคล</h3>
         <form
           ref={formData}
@@ -66,13 +66,14 @@ export default function Table() {
             submit
           </button>
         </form>
-        <div className="my-3">
+        <div className="mb-3 mt-5">
           <button
+            className="py-2 px-3 shadow-md shadow-zinc-200 hover:bg-zinc-100 rounded"
             onClick={(e) => {
               let url = location.href;
               navigator.clipboard.writeText(url + "&submit=auto");
               e.currentTarget.innerText = "copied";
-           }}
+            }}
           >
             copy link
           </button>

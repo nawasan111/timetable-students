@@ -6,6 +6,7 @@ import StudenStatus from "../components/StudenStatus";
 import Faculty from "../components/Faculty";
 import LImitCount from "../components/LImitCount";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +30,9 @@ export default function Home() {
           >
             search
           </button>
+        </div>
+        <div className="mt-10 text-right">
+          <Link className="underline hover:text-blue-600" to={'/table'}>ตารางเรียรายบุคคล</Link>
         </div>
       </FormInput>
     </main>
