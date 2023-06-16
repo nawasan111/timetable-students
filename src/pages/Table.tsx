@@ -30,7 +30,7 @@ export default function Table() {
       "Tab",
       "Enter",
     ];
-    if (!re.test(e.key) && !allowKey.includes(e.key)) {
+    if (!re.test(e.key) && !allowKey.includes(e.key) && (!e.ctrlKey)) {
       e.preventDefault();
     }
   };
