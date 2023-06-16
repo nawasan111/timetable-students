@@ -32,7 +32,7 @@ export default function Home() {
           </button>
         </div>
         <div className="mt-5 text-right">
-          <Link className="underline hover:text-blue-600" to={'/table'}>ตารางเรียรายบุคคล</Link>
+          <Link className="underline hover:text-blue-600" to={'/table'}>ตารางเรียนรายบุคคล</Link>
         </div>
       </FormInput>
     </main>
