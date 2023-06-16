@@ -17,6 +17,7 @@ export default function StudentIdInput() {
     let re = /^[0-9\b]+$/;
     console.log(e.key);
     let allowKey = [
+      "*",
       "Delete",
       "Backspace",
       "ArrowLeft",
