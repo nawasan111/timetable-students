@@ -2,7 +2,7 @@ export default function Faculty() {
   return (
     <div>
       <label htmlFor="faculty">คณะ</label>
-      <select className="input-select max-w-[80vw]" name="f_facultyid" id="">
+      <select className="input-select w-[55%] md:w-[35%]" name="f_facultyid" id="">
         <option value="all">ทั้งหมด</option>
         <option value="0">- ไม่กำหนด -</option>
         <option value="11">คณะวิทยาศาสตร์</option>

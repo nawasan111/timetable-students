@@ -4,9 +4,9 @@
 
 @layer components {
   .input-text {
-    @apply bg-zinc-100 p-1 my-3 mx-2 shadow shadow-zinc-300 border rounded;
+    @apply bg-gray-50 p-1 my-3 mx-2 shadow shadow-zinc-100 border border-slate-300 rounded focus:outline-orange-300;
   }
   .input-select {
-    @apply rounded px-3 my-2 mx-2 p-1 bg-white shadow shadow-zinc-200 border max-w-[80vw];
+    @apply rounded px-3 my-2 mx-2 p-1 bg-white shadow shadow-zinc-200 border max-w-[80vw] focus:outline-orange-300;
   }
 }

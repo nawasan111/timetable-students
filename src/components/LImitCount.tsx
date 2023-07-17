@@ -2,6 +2,7 @@ import { ChangeEvent, useState, KeyboardEvent } from "react";
 
 export default function LImitCount() {
   const [limitCount, setLimitCount] = useState("");
+  const [modeSelect, setModeSelect] = useState("25");
 
   const getChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
     let re = /^[0-9\b]+$/;
@@ -28,21 +29,27 @@ export default function LImitCount() {
 
   return (
     <div className="mt-3">
-      <label htmlFor="">จำนวนรายการที่ได้จากการค้นหาไม่เกิน</label>
-      <select className="input-select" name="f_maxrows" id="">
+      <label htmlFor="">จำนวนรายการสูงสุด</label>
+      <select
+        className="input-select"
+        name="f_maxrows"
+        onChange={(e) => setModeSelect(e.target.value)}
+      >
         <option value="25">25</option>
         <option value="100">100</option>
         <option value={limitCount}>custom</option>
       </select>
       <div>
-        <input
-          className="input-text"
-          placeholder="จำนวนรายการ (ตัวเลข)"
-          type="text"
-          value={limitCount}
-          onChange={getChangeInput}
-          onKeyDown={getKeyDown}
-        />
+        {modeSelect != "25" && modeSelect != "100" && (
+          <input
+            className="input-text"
+            placeholder="จำนวนรายการ (ตัวเลข)"
+            type="text"
+            value={limitCount}
+            onChange={getChangeInput}
+            onKeyDown={getKeyDown}
+          />
+        )}
       </div>
     </div>
   );

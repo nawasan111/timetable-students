@@ -18,7 +18,7 @@ export default function FormInput({ children }: FormProps) {
     }
   }, []);
   return (
-    <div className="block rounded-lg bg-white p-6 shadow-lg border dark:bg-neutral-700">
+    <div className="block md:w-9/12 lg:w-8/12 max-w-3xl rounded-lg bg-white p-6 shadow sm:border dark:bg-neutral-700">
       <form
         acceptCharset="windows-874"
         id="formRef"
