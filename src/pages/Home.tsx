@@ -25,7 +25,7 @@ export default function Home() {
         <LImitCount />
         <div>
           <button
-            className="py-2 px-3 shadow shadow-zinc-200 border outline-orange-300 hover:outline outline-2 rounded "
+            className="btn-orange"
             type="submit"
           >
             search
