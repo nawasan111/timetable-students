@@ -29,6 +29,7 @@ export default function StudentIdInput() {
         className="input-text"
         type="text"
         name="f_studentcode"
+        inputMode="numeric"
         placeholder="รหัสประจำตัว (ตัวเลข)"
         value={idValue}
         onChange={getChangeInput}
