@@ -6,23 +6,23 @@ export default function Table() {
   const [studenId, setStudentId] = useState("");
   const formData = useRef<HTMLFormElement>(null);
   useEffect(() => {
-    let id = search.get("studentid") ?? "";
+    const id = search.get("studentid") ?? "";
     if (id.length > 0) {
       setStudentId(id);
     }
   }, []);
 
   useEffect(() => {
-    let submiting = search.get("submit") ?? "";
+    const submiting = search.get("submit") ?? "";
     if (studenId.length > 0 && submiting === "auto") {
       formData.current?.submit();
     }
   }, [studenId]);
 
   const getKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-    let re = /^[0-9\b]+$/;
+    const re = /^[0-9\b]+$/;
     console.log(e.key);
-    let allowKey = [
+    const allowKey = [
       "Delete",
       "Backspace",
       "ArrowLeft",
@@ -74,7 +74,7 @@ export default function Table() {
           <button
             className="py-2 px-3 shadow-md shadow-zinc-200 hover:bg-zinc-100 rounded"
             onClick={(e) => {
-              let url = location.href;
+              const url = location.href;
               navigator.clipboard.writeText(url + "&submit=auto");
               e.currentTarget.innerText = "copied";
             }}
