@@ -37,7 +37,7 @@ export default function Table() {
 
   return (
     <main className="text-center flex justify-center lg:items-center lg:min-h-screen my-3 lg:my-0 px-10">
-      <div className="block rounded-lg bg-white p-6 shadow-lg border dark:bg-neutral-700">
+      <div className="block rounded-lg bg-white p-6 shadow-lg border">
         <h3 className="text-2xl my-3">ตารางเรียนรายบุคคล</h3>
         <form
           ref={formData}

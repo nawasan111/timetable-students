@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, ReactNode } from "react";
 import { useSearchParams } from "react-router-dom";
 
 type FormProps = {
-  children: string | JSX.Element | JSX.Element[];
+  children: string | ReactNode | ReactNode[];
 };
 
 export default function FormInput({ children }: FormProps) {
@@ -18,7 +18,7 @@ export default function FormInput({ children }: FormProps) {
     }
   }, []);
   return (
-    <div className="block md:w-9/12 lg:w-8/12 max-w-3xl rounded-lg bg-white p-6 shadow sm:border dark:bg-neutral-700">
+    <div className="block md:w-9/12 lg:w-8/12 max-w-3xl rounded-lg bg-white p-6 shadow sm:border">
       <form
         onSubmit={(e) => {
           const full_name: string = e.currentTarget.full_name.value.split(" ");
